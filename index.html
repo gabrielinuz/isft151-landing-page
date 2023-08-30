@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>ISFT151 - Instituto Superior de Formación Técnica 151</title>
+</head>
+
+<body>
+    <header>
+        <h1>ISFT151</h1>
+        <nav>
+            <a href="#promotion">Promoción</a>
+            <a href="#courses">Carreras</a>
+            <a href="#registration">Inscripción</a>
+        </nav>
+    </header>
+
+    <section id="promotion">
+        <h2>Promoción</h2>
+        <p>Bienvenido al Instituto Superior de Formación Técnica 151. ¡Descubre nuestras carreras y comienza tu camino
+            hacia el éxito profesional!</p>
+    </section>
+
+    <section id="courses">
+        <h2>Carreras</h2>
+        <ul id="courses-list">
+            <!-- Aquí se agregarán dinámicamente las carreras -->
+            <p>El instituto en este momento está ofreciendo 7 carreras de tecnicaturas superiores, que están contempladas en la Ley de
+            Educación Superior y es una oferta pública que depende de la Dirección General de Cultura y Educación de la Provincia de
+            Buenos Aires. Nosotros en este momento tenemos 5 carreras que se vienen dando durante muchos años, dos de ellas desde el
+            inicio de la creación del instituto, una más reciente que comenzó el año pasado, y una que está cerrándose, que no hay
+            inscripciones para el próximo año, pero los estudiantes que están cursándola van a concluir sus estudios y es la
+            Tecnicatura Superior en Emergencias de Salud.
+            
+            La nueva que tiene muchos inscriptos y que está por el primer año recién, es la Tecnicatura Superior en Acompañante
+            Terapéutico. También están las históricas, carreras que vienen desde el origen, son la Tecnicatura Superior en Turismo,
+            Tecnicatura Superior en Logística, Tecnicatura Superior en Industria Textil e Indumentaria y la Tecnicatura Superior en
+            Gestión Ambiental y Salud. Además, una de las carreras más demandadas e históricas del Instituto es la de Tecnicatura
+            Superior en Analisis de Sistemas.</p>
+        </ul>
+    </section>
+
+    <section id="registration">
+        <h2>Inscripción</h2>
+        <p>Completa el formulario de inscripción para la carrera de tu elección:</p>
+        <form id="registration-form">
+            <select id="course-select" required>
+                <option value="" disabled selected>Selecciona una carrera</option>
+                <!-- Aquí se agregarán dinámicamente las opciones de carrera -->
+            </select>
+            <input type="text" id="name-input" placeholder="Nombre" required pattern="[a-zA-ZñÑáéíóúÁÉÍÓÚüÜ]{2,254}" title="Sólo puede ser texto.">
+            <input type="email" id="email-input" placeholder="Email" required title="Sólo puede ser un mail válido.">
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
